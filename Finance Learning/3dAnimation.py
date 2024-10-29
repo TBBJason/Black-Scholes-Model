@@ -33,7 +33,7 @@ def update(frame):
     axes.set_zlim(-1,1) # Maintain z limit
 
 # The function that saves the gif
-with writer.saving(fig,"3d-Animation.gif", 100):
+with writer.saving(fig,"Finance Learning/Graphs and Gifs/3d-Animation.gif", 100):
     for xval in range(30):
         update(xval)
 

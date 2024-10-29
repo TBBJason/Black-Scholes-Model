@@ -48,7 +48,7 @@ axes.fill_between(x, y, color='lightblue', alpha=0.5)
 # plt.show()
 
 # Saving the figure, using bound box to make sure the axis are visible.
-fig.savefig('new_graph.png', bbox_inches='tight')
+fig.savefig("Finance Learning/Graphs and Gifs/new_graph.png", bbox_inches='tight')
 
 fig_sub, axes = plt.subplots(2,2)
 
@@ -62,7 +62,7 @@ axes[0][1].plot(x, y2)
 
 axes[1][1].plot(x, y3)
 
-fig_sub.savefig('subplot.png', bbox_inches = 'tight')
+fig_sub.savefig("Finance Learning/Graphs and Gifs/subplot.png", bbox_inches = 'tight')
 
 
 # Plotting a 3-d Graph
@@ -75,5 +75,5 @@ fig3_d, axes = plt.subplots(subplot_kw={"projection": "3d"})
 
 axes.plot_surface(a, b, z)
 
-fig3_d.savefig('3d_surface.png', bbox_inches = 'tight')
+fig3_d.savefig("Finance Learning/Graphs and Gifs/3d_surface.png", bbox_inches = 'tight')
 
