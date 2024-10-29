@@ -16,6 +16,7 @@ fig, axes = plt.subplots(subplot_kw={"projection" : "3d"})
 axes.plot_surface(x, y, z, cmap='plasma')
 plt.show()
 
+# Setting up the surface for the 3-d Function
 xlist = []
 ylist = []
 zlist = []
@@ -33,7 +34,7 @@ def update(frame):
     axes.set_zlim(-1,1) # Maintain z limit
 
 # The function that saves the gif
-with writer.saving(fig,"Finance_Learning/Graphs and Gifs/3d-Animation.gif", 100):
+with writer.saving(fig,"FinanceLearning/Graphs and Gifs/3d-Animation.gif", 100):
     for xval in range(30):
         update(xval)
 
