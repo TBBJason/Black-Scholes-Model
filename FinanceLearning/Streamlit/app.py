@@ -8,13 +8,6 @@ class BlackScholesModel:
     def __init__(self, stock, strike, time, risk, volatility, range=25):
         self.stock, self.strike, self.time, self.risk, self.volatility = stock, strike, time, risk, volatility
         self.range = range
-    # def calculate_call_price(self):
-    #     d_1 = (np.log(self.stock / self.strike) + (self.risk + self.volatility ** 2) * self.time) / (self.volatility * np.sqrt(self.time))
-    #     d_2 = d_1 - (self.volatility * np.sqrt(self.time))
-
-    #     call_price = (self.stock * norm.cdf(d_1) - 
-    #                    (self.strike * np.exp(-self.risk * self.time) * norm.cdf(d_2)))
-    #     return call_price
             
     def generate_surface_data(self):
         X = np.arange(self.stock - self.range, self.stock + self.range, 1)
